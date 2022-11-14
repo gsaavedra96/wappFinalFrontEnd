@@ -1,0 +1,7 @@
+{
+  "name": "WwpFinal",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
