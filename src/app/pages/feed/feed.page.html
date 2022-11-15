@@ -1,0 +1,127 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar">
+    <ion-title style="color: rgb(233, 227, 227);" class="ion-text-capitalize">
+      WilstermannAPP
+    </ion-title>
+<!--     <ion-button (click)='confirmOrderAlert()' class="button-header-end" slot="end">
+      <ion-icon class="icon" ios="ios-log-out" md='ios-log-out'></ion-icon>
+    </ion-button> -->
+  </ion-toolbar>
+</ion-header> 
+
+<ion-content class="home-content">
+  <ion-grid class="background-image">
+    <div class="dashboard" *ngFor=" let feed of feedList">
+
+      <div *ngIf="feed.type == 'news'">
+        
+            <ion-card class="color-card" text-center>
+              <img  (click)="goToNew(feed)" [src]="feed.image.url" />
+  <!--        <ion-card-header>
+                <ion-card-subtitle>{{feed.title}}</ion-card-subtitle>
+              </ion-card-header> -->
+              <ion-card-content class="name-size">{{feed.title}}</ion-card-content>
+              <ion-row style="justify-content: center;">
+                <ion-label class="hour-position">{{feed.creationTimestamp}}</ion-label>
+                <!-- <ion-button  (click)="goToComments($event,feed)"class ="icon-right" ></ion-button> -->
+              </ion-row>
+              <!-- <ion-icon name="person"></ion-icon> -->
+              <!-- <h2 class="name-size">{{feed.title}}</h2> -->
+            </ion-card>
+          
+      </div>
+
+
+      <div *ngIf="feed.type == 'trivia'">
+        <ion-card class="trivia-card" *ngIf="feed.level == 1" (click) ="gotoTrivia(feed)">
+          <ion-card-header>
+            <ion-card-title style="color: rgb(233, 227, 227); text-align: center;">Nueva Trivia! - {{feed.titleTrivia}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content style="color: rgb(233, 227, 227); text-align: center;">
+            Nivel basico!
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="trivia-card" *ngIf="feed.level == 2" (click) ="gotoTrivia(feed)" >
+          <ion-card-header>
+            <ion-card-title style="color: rgb(233, 227, 227); text-align: center;">Nueva Trivia! - {{feed.titleTrivia}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content style="color: rgb(233, 227, 227); text-align: center;">
+            Nivel intermedio!
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="trivia-card" *ngIf="feed.level == 3" (click) ="gotoTrivia(feed)" >
+          <ion-card-header>
+            <ion-card-title style="color: rgb(233, 227, 227); text-align: center;">Nueva Trivia! - {{feed.titleTrivia}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content style="color: rgb(233, 227, 227); text-align: center;">
+            Nivel avanzado!
+          </ion-card-content>
+        </ion-card>
+      </div>
+
+
+
+      <div *ngIf="feed.type == 'match'">
+        <ion-card text-center>
+          <ion-card-header>
+            <ion-card-title>{{feed.day}}</ion-card-title>
+            <ion-card-subtitle>
+              <ion-row>
+                <ion-col size="1">
+                  <ion-img [src]="feed.homeTeamLogo.urlLogo"></ion-img>
+                </ion-col>
+                <ion-col size="3">
+                  {{feed.homeName}}
+                </ion-col>
+                <ion-col size="1">
+                  {{feed.homeGoals}}
+                </ion-col >
+                <ion-col size="2">
+                  VS
+                </ion-col>
+                <ion-col size="1">
+                  {{feed.visitGoals}}
+                </ion-col>
+                <ion-col size="3">
+                  {{feed.visitName}}
+                </ion-col>
+                <ion-col size="1">
+                  <ion-img [src]="feed.visitTeamLogo.urlLogo"></ion-img>
+                </ion-col>
+              </ion-row> 
+            </ion-card-subtitle>
+          </ion-card-header>
+    
+          <ion-card-content>
+            {{feed.creationTimestamp}}
+          </ion-card-content>
+          
+        </ion-card>
+      </div>
+
+
+    </div>
+
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-row>
+    <ion-segment class="footer-margin" color="tertiary" value="favorite">
+      <ion-segment-button value="call" [routerLink]="['/feed']">
+        <ion-label class="label-color">WApp</ion-label>
+        <ion-icon class="label-color" name="football"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="favorite" [routerLink]="['/home']">
+        <ion-label class="label-color">Explorar</ion-label>
+        <ion-icon class="label-color" name="search"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="map" [routerLink]="['/account']">
+        <ion-label class="label-color">Mi Cuenta</ion-label>
+        <ion-icon class="label-color" name="person"></ion-icon>
+      </ion-segment-button>
+      <div class="watermark">
+        <label class="label-color">Powered by AITBOL</label>
+      </div>
+    </ion-segment>
+  </ion-row>
+</ion-footer>

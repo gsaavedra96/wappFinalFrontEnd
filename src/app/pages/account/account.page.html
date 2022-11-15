@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar">
+    <ion-title class="ion-text-capitalize">
+      WilstermannAPP
+    </ion-title>
+    <ion-button (click)='confirmOrderAlert()' class="button-header-end" slot="end">
+      <ion-icon name="return-right"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header> 
+
+
+<ion-content class="color-content">
+  <ion-grid style="text-align: center;" class="ion-padding">
+    <ion-img width="80" height="80" src="../../../assets/images/home/wilsterLogo.png"></ion-img>
+    <ion-label style="margin:1em; color: rgb(233, 227, 227);">
+      Wilstermann quiere que te registres
+    </ion-label>
+    <ion-label style="margin:1em; color: rgb(233, 227, 227);">
+      Accede a contenido exclusivo, personalizado para tu perfil, mira las predicciones y stickers oficiales
+    </ion-label>
+  </ion-grid>
+    <ion-card class="card-color" (click)="goToRegisterPage()" color="primary">
+        <ion-card-header>
+          <ion-card-title style="text-align: center;">Registrarse</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+      <ion-card (click)="goToLoginPage()" color="primary">
+        <ion-card-header>
+          <ion-card-title style="text-align: center;">Iniciar Sesion</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+</ion-content>
+
+
+
+
+<ion-footer>
+  <ion-row>
+    <ion-segment class="footer-margin" color="tertiary" value="favorite">
+      <ion-segment-button value="call" [routerLink]="['/feed']">
+        <ion-label class="label-color">WApp</ion-label>
+        <ion-icon class="label-color" name="football"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="favorite" [routerLink]="['/home']">
+        <ion-label class="label-color">Explorar</ion-label>
+        <ion-icon class="label-color" name="search"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="map" [routerLink]="['/account']">
+        <ion-label class="label-color">Mi Cuenta</ion-label>
+        <ion-icon class="label-color" name="person"></ion-icon>
+      </ion-segment-button>
+      <div class="watermark">
+        <label class="label-color">Powered by AITBOL</label>
+      </div>
+    </ion-segment>
+  </ion-row>
+</ion-footer>
+

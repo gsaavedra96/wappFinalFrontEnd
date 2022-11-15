@@ -1,0 +1,207 @@
+ion-grid {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+  
+    ion-row {
+        flex-grow: 1;
+    }
+}
+
+.toolbar-image{
+    height: 100%;
+    //background-image: url('../../../assets/images/backgroundWW.jpg');
+    background-color: rgba(0, 0, 0, 0.926);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home-image {
+    height: 100%;
+    //background-image: url('../../../assets/images/backgroundWW.jpg');
+    background-color: rgba(0, 0, 0, 0.926);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.button-header-end{
+    margin-right: 1em;
+}
+.button-h{
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold !important;
+}
+
+.color-facebook{
+    color: #3b5998 !important;
+}
+
+.register-button{
+    color: #ffffff !important;
+    vertical-align: center;
+}
+
+.row{
+    vertical-align: center;
+}
+
+ion-list {
+    background-color: transparent !important;
+}
+
+.spinner-container {
+    height: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --background-color:yellow;
+}
+
+ion-footer{
+    background-color: black;
+}
+
+.footer-margin{
+    margin-right: 5em;
+}
+
+.label-color{
+    color: white;
+}
+
+.watermark{
+    margin-top: 1em;
+}
+
+ion-label{
+    font-size: smaller;
+}
+
+.dashboard{
+    margin-bottom: 5em;
+}
+
+.search-bar{
+    color:transparent;
+}
+
+ion-searchbar{
+    --box-shadow:none;
+}
+
+.email-label{
+    font-size: 1em;
+}
+.password-label{
+    font-size: 1em;
+    margin-top: 3em;
+}
+.login-form{
+    margin: 1em;
+    margin-top:1em;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 1em;
+    color:white;
+  }
+  
+.separator::before{
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid white;
+    margin-left: .75em;  
+}
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid white;
+    margin-right: .75em;  
+}
+
+.separator:not(:empty)::before {
+    margin-right: .75em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .75em;
+}
+
+.register-form{
+    margin-top: 5em;
+}
+
+.register-label{
+    display:block;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.underline{
+    border-bottom: solid 0.10em white;
+    color:white
+}   
+.home-content{
+    //--background: rgba(17, 16, 16, 0.911);
+    //--background: blue;
+}
+
+.item-background{
+    //--background: rgba(17, 16, 16, 0.911);
+    --background: blue;
+    color:black;
+    font-size: 0.7em;
+}
+
+.container-item{
+    //--background: rgba(17, 16, 16, 0.911);
+    --background: blue;
+}
+
+ion-item{
+    box-shadow: none !important;
+}
+
+.color-content{
+    --background: rgba(17, 16, 16, 0.911);
+  }
+
+.toolbar-image{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.background-image {
+    height: 100%;
+    //background-image: url('../../../assets/images/backgroundWW.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.name-size{
+    font-size: 1em;
+}
+
+.content{
+    --background:rgb(202, 33, 33);
+}
+
+ion-card{
+    text-align: center;
+}
+
+.card-color{
+    color: #428cff;
+    background: #428cff;
+    --background: #428cff;
+}
+
+.toolbar{
+    --background: rgb(212, 16, 16);
+}

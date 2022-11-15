@@ -1,0 +1,84 @@
+ion-grid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar-image{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.background-image {
+    height: 100%;
+    //background-image: url('../../../assets/images/backgroundWW.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.name-size{
+    font-size: 0.75em;
+    margin-left: 1em;
+    margin-right: 1em;
+    color: rgba(17, 16, 16, 0.911);
+}
+
+.content{
+    --background:rgb(255, 255, 255);
+}
+
+.label-title{
+    color: rgb(233, 227, 227);
+}
+
+ion-card{
+    text-align: center;
+    background-color: rgb(233, 227, 227);
+    max-width: 20em;
+    min-height: 12em;
+    //background-image: url('../../../assets/images/LAREDO.png');
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 0.75em;
+  }
+  
+.separator::before{
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid rgb(233, 227, 227);
+    margin-left: .75em;  
+}
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid rgb(233, 227, 227);
+    margin-right: .75em;  
+}
+
+.separator:not(:empty)::before {
+    margin-right: .75em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .75em;
+}
+
+.dashboard{
+    margin-top: 1em;
+}
+.toolbar{
+    --background: rgb(212, 16, 16);
+}
+.card-color{
+    --background: rgb(233, 227, 227);
+}
+
+.color-content{
+    --background: rgba(17, 16, 16, 0.911);
+  }

@@ -1,0 +1,51 @@
+ion-grid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar-image{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.background-image {
+    height: 100%;
+    //background-image: url('../../../assets/images/backgroundWW.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.name-size{
+    font-size: 1em;
+    text-align: center;
+}
+
+.home-content{
+    //--background:rgb(255, 255, 255);
+    --background: rgba(17, 16, 16, 0.911);
+}
+
+.color-card{
+    --background:rgb(255, 255, 255) !important;
+}
+
+.hour-position{
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+.icon-right{
+    //float: right;
+    //margin-bottom: 1em;
+    //margin-right: 1em;;
+    max-width: 1em;
+    max-height: 1.5em;
+    padding-left: 18em;
+}
+.toolbar{
+    //--background: rgb(212, 16, 16);
+    --background: rgb(84, 212, 16);
+}

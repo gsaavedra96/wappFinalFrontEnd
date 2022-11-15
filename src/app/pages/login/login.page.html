@@ -1,0 +1,36 @@
+<!--<ion-header [translucent]="true">-->
+<ion-header>  
+  <ion-toolbar class="toolbar-main toolbar-image">
+    <ion-buttons slot="start">
+      <ion-back-button mode='md' defaultHref="account"></ion-back-button>
+    </ion-buttons>
+    <ion-title text-center class="ion-text-capitalize" style="margin-right: 50px;" >
+      WilstermannAPP
+    </ion-title>
+  </ion-toolbar>
+</ion-header> 
+
+
+<ion-content>
+  <ion-item  lines="none" style="margin-top: 7em;">
+    <ion-label text-center style="font-weight: bold;">Iniciar Sesion</ion-label>
+  </ion-item>
+  <form (ngSubmit)="login()" style="margin-top: 1.2em;">
+    <ion-item lines="full" >
+      <ion-label position="floating">Email</ion-label>
+      <ion-input [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}" type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full" >
+      <ion-label position="floating">Password</ion-label>
+      <ion-input [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}" type="password" required></ion-input>
+    </ion-item>
+    <ion-row style="margin: 3em;">
+      <ion-col>
+        <!--<ion-button type="submit" color="danger" expand="block">Sign Up</ion-button>-->
+        <ion-button type="submit" mode="ios" class="button-h color-facebook start-button" color="light" fill="solid" size="default" shape="round" expand="block">
+          Sign Up
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

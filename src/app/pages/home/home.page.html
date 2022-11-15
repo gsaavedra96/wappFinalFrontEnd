@@ -1,0 +1,132 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar class="toolbar-image">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide='false'></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ folder }}</ion-title>
+    <ion-title class="ion-text-capitalize">
+      WilstermannAPP
+    </ion-title>
+    <ion-button (click)='confirmOrderAlert()' slot="end">
+      <ion-icon class="icon" ios="ios-log-out" md='ios-log-out'></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-toolbar>
+  <ion-searchbar color="white"></ion-searchbar>
+</ion-toolbar>
+
+<ion-content fixed color="primary">
+  <ion-grid class="home-image">
+<!--     <div class="spinner-container" *ngIf="spinner">
+      <ion-spinner color="primary"></ion-spinner>
+    </div> -->
+<!--     <ion-refresher (ionRefresh)="doRefresh($invitation)" slot="fixed" pullFactor="0.5" pullMin="100" pullMax="200">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher> -->
+
+    <div class="dashboard">
+      <ion-row>
+        <ion-col col-6>
+          <ion-card style="background-image: url('../../../assets/images/home/news.png')" [routerLink]="['/news']" text-center padding color="danger">
+            <!-- <ion-icon name="person"></ion-icon> -->
+            <h2 class="card-label">Noticias</h2>
+          </ion-card>
+        </ion-col>
+        <ion-col col-6>
+          <ion-card style="background-image: url('../../../assets/images/home/results.png')" [routerLink]="['/results']" text-center padding color="danger">
+            <!-- <ion-icon name="people"></ion-icon> -->
+            <h2 class="card-label">Resultados</h2>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card style="background-image: url('../../../assets/images/home/webpage.png')" [routerLink]="['/trivia']" text-center padding color="danger">
+            <!-- <ion-icon name="calendar"></ion-icon> -->
+            <h2 class="card-label">Trivias</h2>
+          </ion-card>
+        </ion-col>
+        <ion-col col-6>
+          <ion-card style="background-image: url('../../../assets/images/home/videos.png')" [routerLink]="['/tienda']" ext-center padding color="danger">
+            <!-- <ion-icon name="settings"></ion-icon> -->
+            <h2 class="card-label">Tienda</h2>
+          </ion-card>
+        </ion-col>
+
+        <!--<ion-col col-6>
+          <ion-card style="background-image: url('../../../assets/images/home/stream.png')" [routerLink]="['/stream']" text-center padding color="danger">
+            <h2 class="card-label">En vivo</h2>
+          </ion-card>
+        </ion-col>-->
+      </ion-row>
+      <ion-row>
+        <ion-col col-6>
+          <ion-card style="background-image: url('../../../assets/images/home/history.png')" [routerLink]="['/history']" text-center padding color="danger">
+            <h2 class="card-label">Historia</h2>
+          </ion-card>
+<!--           <ion-card [routerLink]="['/trophies']" text-center padding color="danger">
+            <h2>Trofeos</h2>
+          </ion-card> -->
+        </ion-col>
+        <ion-col col-6>
+            <ion-card style="background-image: url('../../../assets/images/home/players.png')" [routerLink]="['/players']" text-center padding color="danger">
+              <!-- <ion-icon name="calendar"></ion-icon -->
+              <h2 class="card-label">Jugadores</h2>
+            </ion-card>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+<!--         <ion-col col-6>
+          <ion-card [routerLink]="['/history']" text-center padding color="danger">
+            <h2>Ayuda</h2>
+          </ion-card>
+        </ion-col> -->
+       <!--  <ion-col size="6">
+            <ion-card style="background-image: url('../../../assets/images/home/webpage.png')" [routerLink]="['/trophies']" text-center padding color="danger">
+              <h2 class="card-label">WM.com</h2>
+            </ion-card>
+          </ion-col> -->
+      </ion-row>
+    </div>
+<!--     <div *ngIf="!spinner">
+
+      <ion-list *ngFor="let local of locals">
+        <ion-row>
+          <ion-col (click)="getLocal(local)">
+            <div class="card-center-image" style="background-image: url('./assets/images/jagger_lab.jpeg');">
+              <div class="card-center-bg" >
+                <div class="card-center-text">
+                <p class="title">{{local.name}}</p>
+                <p class="subtitle">{{local.description}}</p>
+              </div>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-list>
+    </div> -->
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-row>
+    <ion-segment [(ngModel)]="filter" class="footer-margin" color="tertiary" value="favorite">
+      <ion-segment-button value="call" [routerLink]="['/feed']">
+        <ion-label class="label-color">WAPP</ion-label>
+        <ion-icon class="label-color" name="football"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="favorite" [routerLink]="['/home']">
+        <ion-label class="label-color">Explorar</ion-label>
+        <ion-icon class="label-color" name="search"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="map" [routerLink]="['/account']">
+        <ion-label class="label-color">Mi Cuenta</ion-label>
+        <ion-icon class="label-color" name="person"></ion-icon>
+      </ion-segment-button>
+      <div class="watermark">
+        <label class="label-color">Powered by AITBOL</label>
+      </div>
+    </ion-segment>
+  </ion-row>
+</ion-footer>

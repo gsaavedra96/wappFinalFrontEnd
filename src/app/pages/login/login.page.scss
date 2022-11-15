@@ -1,0 +1,42 @@
+ion-header {
+    .toolbar-main {
+        --background: var(--ion-wapp-color-primary) !important;
+    }
+    ion-toolbar {
+    }
+}
+/*.toolbar-main {
+    --background: var(--ion-wapp-color-primary) !important;
+}*/
+
+ion-content {
+    form, ion-grid {
+        //height: 100%;;    
+        .login-button{
+            width: 80%;
+        }
+    }
+}
+
+.margin ion-img img {
+    max-height: 70%;
+    background-color: black;
+    width: 150%;
+}
+
+.error-message {
+    color:#0075c9;
+    ;
+}
+
+.margin {
+    // margin-top: 30%;
+    margin: 30% 15% 10% 15%;
+}
+
+.spinner-container {
+    // height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

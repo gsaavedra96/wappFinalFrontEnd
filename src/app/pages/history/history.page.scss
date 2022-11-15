@@ -1,0 +1,83 @@
+ion-grid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar-image{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.background-image {
+    height: 100%;
+    //background-image: url('../../../assets/images/backgroundWW.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.name-size{
+    font-size: 1em;
+}
+
+.content{
+    --background:rgb(202, 33, 33);
+}
+
+ion-card{
+    text-align: center;
+}
+
+.paragraph{
+    margin-top:1.2em;
+    margin-left:0.9em;
+    margin-right:0.9em;
+    margin-bottom:2em;
+    background-color: #1c1c1c !important;
+    padding: 0.5em 0.3em;
+    border-radius: 5px;
+}
+
+.title-paragraph {
+    font-size: 2em;
+}
+
+.history-title {
+    text-align: left;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;    
+}  
+
+.label-paragraph {
+    font-size: 1em;
+    padding-top: 150em;
+}
+.history-label {  
+    text-align: justify;
+    color: white;
+    font-size: 0.9rem;
+    //font-weight: 300;
+    font-weight: inherit;
+    font-style: inherit;
+    //font-stretch: normal;
+    //font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    margin:0.75em;
+}
+
+.toolbar{
+    --background: rgb(212, 16, 16);
+}
+.color-content{
+    --background: rgba(17, 16, 16, 0.911);
+    //--background: #252525;
+  }
+

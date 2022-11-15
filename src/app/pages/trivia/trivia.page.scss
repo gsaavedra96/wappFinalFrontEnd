@@ -1,0 +1,33 @@
+.color-content{
+    --background: rgba(17, 16, 16, 0.911);
+  }
+
+.toolbar-image{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.background-image {
+    height: 100%;
+    //background-image: url('../../../assets/images/backgroundWW.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.name-size{
+    font-size: 1em;
+}
+
+.content{
+    --background:rgb(202, 33, 33);
+}
+
+ion-card{
+    text-align: center;
+}
+
+.toolbar{
+    --background: rgb(212, 16, 16);
+}

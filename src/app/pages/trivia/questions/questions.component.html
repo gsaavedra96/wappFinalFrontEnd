@@ -1,0 +1,28 @@
+  <ion-header>
+    <ion-toolbar class="toolbar">
+      <ion-buttons slot="start">
+        <ion-back-button style="color:rgb(233, 227, 227)" mode='md' defaultHref="home"></ion-back-button>
+      </ion-buttons>
+      <ion-title style="color:rgb(233, 227, 227)">{{trivia.titleTrivia}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="color-content">
+    <ion-grid style="text-align: center;" class="ion-padding">
+      <ion-img width="80" height="80" src="../../../assets/images/home/wilsterLogo.png"></ion-img>
+    </ion-grid>
+    <div *ngIf="view" style="text-align: center;">
+        <ion-label>
+          {{view.mainQuestion}}  
+        </ion-label>
+        <div *ngFor="let option of view.options">
+            <div appChangeBg [isCorrect] = "option.id == view.responseId" >
+                <ion-card (click) = "answer(option)" class="card-answer">
+                  <ion-card-header>
+                    <ion-card-title style="text-align: center;">{{option.question}}</ion-card-title>
+                  </ion-card-header>
+                </ion-card>
+            </div>
+        </div>
+    </div>
+  </ion-content>

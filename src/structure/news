@@ -1,0 +1,7 @@
+data : {
+    Id
+    Photo
+    Title
+    Introducction
+    text
+}

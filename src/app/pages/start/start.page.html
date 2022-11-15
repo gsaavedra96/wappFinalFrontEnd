@@ -1,0 +1,27 @@
+<ion-content fixed class="dark">
+
+  <ion-grid fixed class="grid-bg">
+  
+    <ion-row class="ion-justify-content-center ion-align-items-center" style="height: 100%;">
+      <ion-col size="8" class="ion-text-center">
+
+        <ion-button class="button-h margin-h start-button" (click)="initHome()" mode="ios" color="primary" fill="outline" size="default" shape="round" expand="block">
+          Comenzar
+        </ion-button>
+
+        <ion-button (click)="goToLoginPage()" mode="ios" class="button-h color-facebook start-button" color="light" fill="solid" size="default" shape="round" expand="block">
+          Iniciar Sesion
+        </ion-button>
+
+        <ion-row style="justify-content: center;" class="register-label">
+          <ion-label style="color: white;" (click)="register()">No tienes una cuenta?  </ion-label>
+          <ion-label style="color: rgb(200, 206, 40)" class="underline" [routerLink]="['/register']"> Registrate</ion-label>
+        </ion-row>
+  
+      </ion-col>
+    </ion-row>
+  
+  </ion-grid>
+  
+</ion-content>
+  

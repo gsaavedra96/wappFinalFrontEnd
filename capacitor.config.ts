@@ -1,8 +1,14 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
+
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'WwpFinal',
+  plugins: {
+    FirebaseMessaging: {
+      presentationOptions: ["badge", "sound", "alert"],
+    },
+  },
+  appId: 'io.ionic.wilstermannapp',
+  appName: 'WilstermannApp',
   webDir: 'www',
   bundledWebRuntime: false
 };

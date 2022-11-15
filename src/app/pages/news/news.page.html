@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button style="color:rgb(233, 227, 227)" mode='md' defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="color:rgb(233, 227, 227)">Noticias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="home-content">
+  <ion-grid class="background-image">
+    <div class="dashboard">
+      <ion-row>
+        <ion-col size="12" *ngFor="let new of newsList; let i = index">
+          <ion-card class="color-card" text-center>
+            <img  (click)="goToNew(new)" [src]="new.image.url" />
+<!--        <ion-card-header>
+              <ion-card-subtitle>{{new.title}}</ion-card-subtitle>
+            </ion-card-header> -->
+            <ion-card-content class="name-size">{{new.title}}</ion-card-content>
+            <ion-row style="justify-content: center;">
+              <ion-label class="hour-position">{{new.creationTimestamp}}</ion-label>
+              <!-- <ion-button  (click)="goToComments($event,new)"class ="icon-right" ></ion-button> -->
+            </ion-row>
+            <!-- <ion-icon name="person"></ion-icon> -->
+            <!-- <h2 class="name-size">{{new.title}}</h2> -->
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </div>
+
+  </ion-grid>
+</ion-content>

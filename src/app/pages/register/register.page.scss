@@ -1,0 +1,113 @@
+ion-header {
+    .toolbar-main {
+        --background: var(--ion-wapp-color-primary) !important;
+    }
+    ion-toolbar {
+    }
+}
+
+
+ion-grid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  
+    ion-row {
+        flex-grow: 1;
+    }
+}
+
+.toolbar-image{
+    height: 100%;
+    //background-image: url('../../../assets/images/backgroundWW.jpg');
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home-image {
+    height: 100%;
+    //background-image: url('../../../assets/images/backgroundWW.jpg');
+    //background-color: blue;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.button-header-end{
+    margin-right: 1em;
+}
+
+.color-facebook{
+    color: #3b5998 !important;
+}
+
+.register-button{
+    color: black !important;
+    vertical-align: center;
+}
+
+
+ion-footer{
+    //background-color: black;
+    background-color: gray;
+
+}
+
+
+ion-label{
+    font-size: smaller;
+}
+
+.name-label{
+    font-size: 1em;
+}
+
+.email-label{
+    font-size: 1em;
+    margin-top: 3em;
+}
+
+.password-label{
+    font-size: 1em;
+    margin-top: 3em;
+}
+
+.password-confirm-label{
+    font-size: 1em;
+    margin-top: 3em;
+}
+
+.login-form{
+    margin: 1em;
+    margin-top:1em;
+}
+
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 1em;
+  }
+  
+.separator::before{
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+    margin-left: .75em;  
+}
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+    margin-right: .75em;  
+}
+
+.separator:not(:empty)::before {
+    margin-right: .75em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .75em;
+}

@@ -1,0 +1,93 @@
+ion-grid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  
+    ion-row {
+        flex-grow: 1;
+    }
+}
+
+.toolbar-image{
+    height: 100%;
+    //background-image: url('../../../assets/images/backgroundWW.jpg');
+    background-color: blue;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.toolbar{
+    --background: rgb(212, 16, 16);
+}
+
+.home-image {
+    height: 100%;
+    //background-image: url('../../../assets/images/backgroundWW.jpg');
+    background-color: rgba(0, 0, 0, 0.926);//background-color: blue;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ion-list {
+    background-color: transparent !important;
+}
+
+.spinner-container {
+    height: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --background-color:yellow;
+}
+
+.home-content{
+    --background: rgba(17, 16, 16, 0.911);
+}
+
+ion-footer{
+    background-color: black;
+}
+
+.footer-margin{
+    margin-right: 5em;
+}
+
+.label-color{
+    color: white;
+}
+
+.watermark{
+    margin-top: 1em;
+}
+
+ion-label{
+    font-size: smaller;
+}
+
+.dashboard{
+    margin-bottom: 0.2em;
+}
+
+.search-bar{
+    color:transparent;
+}
+
+ion-searchbar{
+    --box-shadow:none;
+}
+
+ion-card {
+    --background: rgb(255, 255, 255);
+    --color: rgba(17, 16, 16, 0.911);
+  }
+
+ion-card-content {
+    --background: rgb(255, 255, 255);;
+    --color: rgba(17, 16, 16, 0.911);
+}
+
+.trivia-card{
+    --background: rgb(212, 16, 16);
+}

@@ -1,0 +1,67 @@
+[
+    {
+        "id":1,
+        "homeTeamName":"Wilster",
+        "result":{
+            "goalsHomeTeam":1,
+            "goalsAwayTeam":3
+        },
+        "date":"Miercoles 18",
+        "awayTeamName":"Oriente Petrolero"},
+
+     {
+        "id":2,
+        "homeTeamName":"Bolivar",
+        "result":{
+            "goalsHomeTeam":4,
+            "goalsAwayTeam":2
+        },
+        "date":"Miercoles 19",
+        "awayTeamName":"Aurora"},
+
+    {
+        "id":3,
+        "homeTeamName":"Wilster",
+        "result":{
+            "goalsHomeTeam":5,
+            "goalsAwayTeam":1
+        },
+        "date":"Viernes 20",
+        "awayTeamName":"Bolivar"},
+    {
+        "id":4,
+        "homeTeamName":"Blooming",
+        "result":{
+            "goalsHomeTeam":7,
+            "goalsAwayTeam":2
+        },
+        "date":"Sabado 21",
+        "awayTeamName":" Oriente"},
+    {
+        "id":5,
+        "homeTeamName":"Bolivar",
+        "result":{
+            "goalsHomeTeam":1,
+            "goalsAwayTeam":7
+        },
+        "date":"Lunes 23",
+        "awayTeamName":"The Strongest"},
+    {
+        "id":6,
+        "homeTeamName":"San Jose",
+        "result":{
+            "goalsHomeTeam":11,
+            "goalsAwayTeam":3
+        },
+        "date":"Martes 24",
+        "awayTeamName":" Oriente"},
+    {
+        "id":7,
+        "homeTeamName":"Wilster",
+        "result":{
+            "goalsHomeTeam":6,
+            "goalsAwayTeam":3
+        },
+        "date":"Miercoles 25",
+        "awayTeamName":"San Jose"}
+]
