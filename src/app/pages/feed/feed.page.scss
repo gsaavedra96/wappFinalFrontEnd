@@ -46,21 +46,77 @@ ion-list {
     --background: rgba(17, 16, 16, 0.911);
 }
 
+.title-visit-name {
+    padding-top: 1.5em !important;
+    padding-left: 0 !important;
+    padding-right: 4px !important;
+    text-align: right;
+    font-size: 12px;
+}
+.wilstername {
+    color:rgb(3, 3, 174) !important;
+    font-size: 11px !important;
+}
+
+.title-home-name {
+    padding-top: 1.5em !important;
+    padding-left: 4px !important;
+    padding-right: 0 !important;
+    text-align: left;
+    font-size: 12px;
+}
+.title-home-goals {
+    text-align: left;
+    padding-top: 1.1em !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-size: 16px;
+}
+.title-visit-goals {
+    text-align: right;
+    padding-top: 1.1em !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-size: 16px;
+}
+
 ion-footer{
     background-color: black;
 }
 
 .footer-margin{
-    margin-right: 5em;
+    margin-right: 0.5em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
 }
 
 .label-color{
     color: white;
 }
 
-.watermark{
-    margin-top: 1em;
+.title-day {
+    font-size: 22px;
+    color: rgb(212, 16, 16);
+    padding-left: 10px;
 }
+
+.watermark{
+    //margin-top: 1em;
+    margin-left:2.5em !important;
+    margin-top:0.3em !important;
+    margin-bottom:0.5em !important;
+    margin-right:0.75em !important;
+    .first-title{
+     font-size: 12px;
+     font-weight: 600;
+     text-align:left;
+    }
+    .second-title{
+     font-size: 18px;
+     font-weight: 700;
+     text-align:left;
+    }
+ }
 
 ion-label{
     font-size: smaller;
@@ -91,3 +147,16 @@ ion-card-content {
 .trivia-card{
     --background: rgb(212, 16, 16);
 }
+
+@media (max-width: 375.1px) {
+    .title-visit-name {
+        font-size: 12px;
+    }
+    .title-home-name {
+        font-size: 12px;
+    }
+    .wilstername {
+        color:rgb(3, 3, 174) !important;
+        font-size: 11px !important;
+    }
+  }
