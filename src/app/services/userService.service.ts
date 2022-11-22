@@ -25,11 +25,11 @@ export class UserService {
     }
 
   getUser(data: any) {
-    return this.http.post("http://216.122.168.190:8080/dialex/webresources/Wapp/user/get", { data, "token":"817dd8e5dc7c750d48a5e0a16cd625c8"});
+    return this.http.post("https://demo.digitallexperience.com/dialex/webresources/Wapp/user/get", { data, "token":"817dd8e5dc7c750d48a5e0a16cd625c8"});
   }
 
   addUser(data:any){
-    return this.http.post("http://216.122.168.190:8080/dialex/webresources/Wapp/user/add", { data , "token":"817dd8e5dc7c750d48a5e0a16cd625c8"});
+    return this.http.post("https://demo.digitallexperience.com/dialex/webresources/Wapp/user/add", { data , "token":"817dd8e5dc7c750d48a5e0a16cd625c8"});
   }
 
   login(email:any,password:any,token:any){
@@ -48,7 +48,7 @@ export class UserService {
         }
     };
 
-    return this.http.post("http://216.122.168.190:8080/dialex/webresources/Wapp/user/login",  data );
+    return this.http.post("https://demo.digitallexperience.com/dialex/webresources/Wapp/user/login",  data );
   }
 
   registerAuth({ email, password }: any) {

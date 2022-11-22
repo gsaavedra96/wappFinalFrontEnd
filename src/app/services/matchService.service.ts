@@ -9,7 +9,7 @@ export class MatchService {
   constructor(private http: HttpClient) { }
 
   matchList(data: any) {
-    return this.http.post("http://216.122.168.190:8080/dialex/webresources/Wapp/match/list", { "token":"817dd8e5dc7c750d48a5e0a16cd625c8"});
+    return this.http.post("https://demo.digitallexperience.com/dialex/webresources/Wapp/match/list", { "token":"817dd8e5dc7c750d48a5e0a16cd625c8"});
   }
 
   public getHeaders() {

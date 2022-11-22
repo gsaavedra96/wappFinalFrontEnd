@@ -65,7 +65,9 @@ export class NewComponent implements OnInit {
   }
 
   setVariables(){
+    this.document = document.getElementById('image-background');
     this.post = this.navigation.extras.state.post;
+    console.log("POSTT",this.post)
     this.document.style.background = 'url('+this.post.image.url+') ';
   }
   
