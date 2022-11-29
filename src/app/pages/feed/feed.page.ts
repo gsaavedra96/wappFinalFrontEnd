@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class FeedPage implements OnInit {
 
   public feedList : any;
+  public spinner : boolean = false;
 
   constructor(
     private feedService : FeedService,
@@ -28,7 +29,8 @@ export class FeedPage implements OnInit {
   getFeed(){
     this.feedService.get().subscribe((response: any) => { 
       //this.feedList = response.data;
-      this.setInfo(response.data)
+      this.setInfo(response.data);
+      this.spinner = true;
     });
   }
 

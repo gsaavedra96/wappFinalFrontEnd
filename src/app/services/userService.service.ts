@@ -34,8 +34,9 @@ export class UserService {
 
   login(email:any,password:any,token:any){
 
-   console.log("email",email)
+  /*  console.log("email",email)
    console.log("password",password)
+   console.log("token",token.accessToken) */
     let data = {
         'token': "817dd8e5dc7c750d48a5e0a16cd625c8",
         'data': {
@@ -44,7 +45,7 @@ export class UserService {
                 'password': password,
             },
         "type": this.deviceType,
-        "notificationId": token
+        "notificationId": token.accessToken
         }
     };
 

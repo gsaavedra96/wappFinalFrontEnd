@@ -12,6 +12,7 @@ import news from '../../files/newsList.json';
 export class NewsPage implements OnInit {
 
   public newsList :any = []
+  public spinner : boolean = true;
 
   constructor(
     private httpService : HttpService,
@@ -30,6 +31,7 @@ export class NewsPage implements OnInit {
   listNews(){
     this.newsService.newsList({}).subscribe((response: any) => { 
       this.newsList = response.data;
+      this.spinner = false;
     });
   }
 
