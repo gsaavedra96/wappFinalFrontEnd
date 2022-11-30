@@ -11,11 +11,13 @@ import { Router } from '@angular/router';
 export class TriviaPage implements OnInit {
 
   public triviaList : any;
-
+  public spinner : boolean = true;
+  
   constructor(
     //private streamingMedia: StreamingMedia
     private triviaService : TriviaService,
     private router : Router
+
     ) { }
 
   ngOnInit() {
@@ -34,6 +36,7 @@ export class TriviaPage implements OnInit {
   listMatch(){
     this.triviaService.listTrivia({}).subscribe((response: any) => { 
       this.triviaList = response.data;
+      this.spinner = false;
     });
   }
 

@@ -109,18 +109,19 @@
     </div> -->
   </ion-grid>
 </ion-content>
+
 <ion-footer>
   <ion-row>
-    <ion-segment [(ngModel)]="filter" class="footer-margin" color="tertiary" value="favorite">
-      <ion-segment-button value="call" [routerLink]="['/feed']">
+    <ion-segment [(ngModel)]="filter" (ngModelChange)="segmentChanged($event)" class="footer-margin" color="tertiary">
+      <ion-segment-button value="feed">
         <ion-label class="label-color">WAPP</ion-label>
         <ion-icon class="label-color" name="football"></ion-icon>
       </ion-segment-button>
-      <ion-segment-button value="favorite" [routerLink]="['/home']">
+      <ion-segment-button value="home">
         <ion-label class="label-color">Explorar</ion-label>
         <ion-icon class="label-color" name="search"></ion-icon>
       </ion-segment-button>
-      <ion-segment-button value="map" [routerLink]="['/account']">
+      <ion-segment-button value="account">
         <ion-label class="label-color">Mi Cuenta</ion-label>
         <ion-icon class="label-color" name="person"></ion-icon>
       </ion-segment-button>

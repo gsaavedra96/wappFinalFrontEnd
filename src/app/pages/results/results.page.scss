@@ -127,3 +127,11 @@ ion-card{
     --color:  rgb(223, 215, 215);
     //--color-checked: rgb(212, 16, 16);
   }
+
+  .spinner-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(212, 16, 16);
+}

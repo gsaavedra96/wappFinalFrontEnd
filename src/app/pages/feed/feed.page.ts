@@ -9,7 +9,8 @@ import { Router } from '@angular/router';
 export class FeedPage implements OnInit {
 
   public feedList : any;
-  public spinner : boolean = false;
+  public spinner : boolean = true;
+  public filter: any;
 
   constructor(
     private feedService : FeedService,
@@ -22,15 +23,35 @@ export class FeedPage implements OnInit {
     this.getFeed();
   }
 
+  ngAfterViewChecked(){
+    this.filter = 'feed';
+  }
+
+  segmentChanged(filter:any) {
+    this.filter = filter;
+    switch (this.filter) {
+      case 'feed':
+        this.router.navigate(['feed']);
+        break;
+      case 'home':
+        this.router.navigate(['home']);
+        break;
+      case 'account':
+        this.router.navigate(['account']);
+        break;
+    }
+  }
+
   initializeVariable(){
     this.feedList = [];
+    this.filter = 'feed';
   }
   
   getFeed(){
     this.feedService.get().subscribe((response: any) => { 
       //this.feedList = response.data;
       this.setInfo(response.data);
-      this.spinner = true;
+      this.spinner = false;
     });
   }
 

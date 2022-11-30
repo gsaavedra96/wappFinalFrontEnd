@@ -6,6 +6,13 @@
     <ion-title style="color:rgb(233, 227, 227)">Partidos</ion-title>
   </ion-toolbar>
 </ion-header>
+
+
+<div class="spinner-container" *ngIf="spinner">
+  <ion-spinner></ion-spinner>
+</div>
+
+
 <ion-content class="color-content">
   <div class="ion-padding">
     <ion-segment mode="ios" [(ngModel)]="filter" (ionChange)="assignMatches()">
@@ -57,5 +64,3 @@
   </div>
 
 </ion-content>
-
-*/

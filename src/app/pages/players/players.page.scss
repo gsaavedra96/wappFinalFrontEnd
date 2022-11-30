@@ -82,3 +82,10 @@ ion-card{
 .color-content{
     --background: rgba(17, 16, 16, 0.911);
   }
+.spinner-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(212, 16, 16);
+}
