@@ -12,23 +12,29 @@
 
 
 <ion-content>
-  <ion-item  lines="none" style="margin-top: 7em;">
-    <ion-label text-center style="font-weight: bold;">Iniciar Sesion</ion-label>
-  </ion-item>
+  <!--<ion-item  lines="none" style="margin-top: 7em;">-->
+    <div class="row" style="margin-top: 7em; margin-left: 1em;">
+      <div class="col-12 register-title">
+        <img class="logo-wapp" style="width: 15%;" src="assets/images/wilstermann_logo_color.png" />
+        <label class="signup-text">Iniciar Sesión</label>
+      </div>
+        <!--<ion-label text-center style="font-weight: bold;">Iniciar Sesión</ion-label>-->
+    </div>
+<!--</ion-item>-->
   <form (ngSubmit)="login()" style="margin-top: 1.2em;">
     <ion-item lines="full" >
       <ion-label position="floating">Email</ion-label>
       <ion-input [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}" type="text" required></ion-input>
     </ion-item>
     <ion-item lines="full" >
-      <ion-label position="floating">Password</ion-label>
+      <ion-label position="floating">Contraseña</ion-label>
       <ion-input [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}" type="password" required></ion-input>
     </ion-item>
     <ion-row style="margin: 3em;">
       <ion-col>
         <!--<ion-button type="submit" color="danger" expand="block">Sign Up</ion-button>-->
         <ion-button type="submit" mode="ios" class="button-h color-facebook start-button" color="light" fill="solid" size="default" shape="round" expand="block">
-          Sign Up
+          Iniciar Sesión
         </ion-button>
       </ion-col>
     </ion-row>

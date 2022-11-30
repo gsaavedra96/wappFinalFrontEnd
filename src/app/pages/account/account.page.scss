@@ -8,6 +8,9 @@ ion-grid {
     }
 }
 
+.logo-wapp {
+    margin-top: 15px;
+}
 .toolbar-image{
     height: 100%;
     //background-image: url('../../../assets/images/backgroundWW.jpg');
@@ -38,6 +41,20 @@ ion-grid {
     color: #3b5998 !important;
 }
 
+.card-dark-color {
+    color: white !important;
+    background-color: #160e69 !important;
+    --background: #160e69 !important;
+    vertical-align: center;
+    margin: 20px 25px 10px 25px !important;
+
+}
+
+.title-button {
+    font-size: 26px !important;
+    font-weight: 650;
+}
+
 .register-button{
     color: #ffffff !important;
     vertical-align: center;
@@ -45,6 +62,10 @@ ion-grid {
 
 .row{
     vertical-align: center;
+}
+
+.row-buttons {
+    margin-top: 7em;
 }
 
 ion-list {
@@ -61,6 +82,7 @@ ion-list {
 
 ion-footer{
     background-color: black;
+    --background:black;
 }
 
 .footer-margin{
@@ -220,4 +242,13 @@ ion-card{
 
 .toolbar{
     --background: rgb(212, 16, 16);
+}
+
+@media (max-width: 375.1px) {
+    .logo-wapp {
+        margin-top: 10px;
+    }
+    .row-buttons {
+        margin-top: 6em;
+    }
 }

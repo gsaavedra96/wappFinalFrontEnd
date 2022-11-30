@@ -26,6 +26,47 @@ ion-grid {
     --background:rgb(255, 255, 255);
 }
 
+
+.home-content{
+  --background: rgba(17, 16, 16, 0.911);
+}
+
+.title-visit-name {
+  padding-top: 1.5em !important;
+  padding-left: 0 !important;
+  padding-right: 4px !important;
+  text-align: right;
+  font-size: 12px;
+}
+.wilstername {
+  color:rgb(3, 3, 174) !important;
+  font-size: 11px !important;
+}
+
+.title-home-name {
+  padding-top: 1.5em !important;
+  padding-left: 4px !important;
+  padding-right: 0 !important;
+  text-align: left;
+  font-size: 12px;
+}
+.title-home-goals {
+  text-align: left;
+  padding-top: 1.1em !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  font-size: 16px;
+}
+.title-visit-goals {
+  text-align: right;
+  padding-top: 1.1em !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  font-size: 16px;
+}
+
+
+
 ion-card{
     text-align: center;
 }
@@ -126,4 +167,19 @@ ion-card{
     --border-color:  rgb(212, 16, 16);
     --color:  rgb(223, 215, 215);
     //--color-checked: rgb(212, 16, 16);
+  }
+
+
+
+  @media (max-width: 375.1px) {
+    .title-visit-name {
+        font-size: 12px;
+    }
+    .title-home-name {
+        font-size: 12px;
+    }
+    .wilstername {
+        color:rgb(3, 3, 174) !important;
+        font-size: 11px !important;
+    }
   }

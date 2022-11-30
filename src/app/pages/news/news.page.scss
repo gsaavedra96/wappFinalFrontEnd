@@ -19,8 +19,11 @@ ion-grid {
 }
 
 .name-size{
-    font-size: 1em;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.3;
     text-align: center;
+    color: white !important;
 }
 
 .home-content{
@@ -28,13 +31,24 @@ ion-grid {
     --background: rgba(17, 16, 16, 0.911);
 }
 
-.color-card{
+/*.color-card{
     --background:rgb(255, 255, 255) !important;
+}*/
+.color-card{
+    --background:#1e1e1e !important;
+    background-color: #1e1e1e !important;
 }
 
+.color-content{
+    --background: rgba(17, 16, 16, 0.911);
+  }
+
 .hour-position{
-    margin-bottom: 1em;
+    margin-bottom: 0.75em;
     margin-left: 1em;
+    margin-right: 1em;
+    text-align: right;
+    color: grey;
 }
 
 .icon-right{

@@ -22,13 +22,17 @@ export class AccountPage implements OnInit {
   initializeVariables(){
     this.isLogged = false;
     this.user = {};
+    this.checkUserLogged();
   }
+
+  
 
   checkUserLogged(){
     let logged = localStorageProvider.getObject('userInfo');
     if (logged) {
       this.isLogged =  true;    
     }
+    this.isLogged =  true;
   }
 
 

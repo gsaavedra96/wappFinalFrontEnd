@@ -31,6 +31,10 @@ ion-card{
     --background:rgb(255, 255, 255);
 }
 
+.color-content{
+    --background: rgba(17, 16, 16, 0.911);
+  }
+
 page-home {
     ion-textarea {
         border-bottom: 1px solid #000000;
@@ -53,6 +57,44 @@ page-home {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover; 
+}
+
+.news-dashboard {
+    min-height: 15em!important;
+    background-color: #1f1f1f !important;
+    padding: 0.6em 0.6em;
+    border-radius: 5px;
+}
+
+.card-comment {
+    --background:gray;
+    background-color: gray;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    min-height: 8em;
+}
+.news-content {
+    text-align: left;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.comments-content {
+    //background-color:lightslategray;
+    background-color: white;
+    margin:10px 15px;
+    padding: 8px;
+    border-radius: 10px;
+    color: #1c1c1c;;
+}
+.button-comments {
+    width:90px;
+    height: 30px;
+    border-radius: 45px;
 }
 
 .summary-title{

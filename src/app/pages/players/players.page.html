@@ -11,45 +11,45 @@
 <ion-content class="color-content">
   <ion-grid class="background-image">
     <div class="dashboard">
-      <ion-title class="label-title">Arqueros</ion-title>
+      <p class="label-title"> Arqueros</p>
       <div class="separator"></div>
       <ion-row *ngIf="goalKeepersList">
         <ion-col size="6" *ngFor="let player of goalKeepersList">
-          <ion-card [routerLink]="['/news']" text-center padding class="card-color">
+          <ion-card [routerLink]="['/news']" text-center padding class="card-color card-player">
             <!-- <ion-icon name="person"></ion-icon> -->
-            <ion-img width="80" height="80" [src]="player.photo"></ion-img>
+            <ion-img width="100" height="100" [src]="player.photo"></ion-img>
             <h2 class="name-size">{{player.name}}</h2>
           </ion-card>
         </ion-col>
       </ion-row>
-      <ion-title class="label-title">Delanteros</ion-title>
+      <p class="label-title"> Delanteros</p>
       <div class="separator"></div>
       <ion-row *ngIf="forwardFieldersList">
         <ion-col size="6" *ngFor="let player of forwardFieldersList">
-          <ion-card [routerLink]="['/news']" text-center padding class="card-color">
+          <ion-card [routerLink]="['/news']" text-center padding class="card-color card-player">
             <!-- <ion-icon name="person"></ion-icon> -->
-            <ion-img width="80" height="80" [src]="player.photo"></ion-img>
+            <ion-img width="100" height="100" [src]="player.photo"></ion-img>
             <h2 class="name-size">{{player.name}}</h2>
           </ion-card>
         </ion-col>
       </ion-row>
-      <ion-title>Medio Campistas</ion-title>
+      <p class="label-title"> Medio Campistas</p>
       <div class="separator"></div>
       <ion-row>
         <ion-col size="6" *ngFor="let player of midFieldersList">
-          <ion-card [routerLink]="['/news']" text-center padding class="card-color">
+          <ion-card [routerLink]="['/news']" text-center padding class="card-color card-player">
             <!-- <ion-icon name="person"></ion-icon> -->
-            <ion-img width="80" height="80" [src]="player.photo"></ion-img>
+            <ion-img width="100" height="100" [src]="player.photo"></ion-img>
             <h2 class="name-size">{{player.name}}</h2>
           </ion-card>
         </ion-col>
       </ion-row>
-      <ion-title>Defensas</ion-title>
+      <p class="label-title"> Defensas</p>
       <div class="separator"></div>
       <ion-row>
         <ion-col size="6" *ngFor="let player of defenseFieldersList">
-          <ion-card [routerLink]="['/news']" text-center padding class="card-color">
-            <ion-img width="80" height="80" [src]="player.photo"></ion-img>
+          <ion-card [routerLink]="['/news']" text-center padding class="card-color card-player">
+            <ion-img width="100" height="100" [src]="player.photo"></ion-img>
             <!-- <ion-icon name="person"></ion-icon> -->
             <h2 class="name-size">{{player.name}}</h2>
           </ion-card>
