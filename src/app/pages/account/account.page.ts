@@ -55,7 +55,7 @@ export class AccountPage implements OnInit {
     if (logged) {
       this.isLogged =  true;    
     }
-    this.isLogged =  true;
+    this.isLogged =  false;
   }
 
   async confirmOrderAlert() {
