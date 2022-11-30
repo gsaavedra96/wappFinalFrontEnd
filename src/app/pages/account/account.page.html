@@ -3,7 +3,7 @@
     <ion-title class="ion-text-capitalize">
       WilstermannAPP
     </ion-title>
-    <ion-button (click)='confirmOrderAlert()' class="button-header-end" slot="end">
+    <ion-button *ngIf="!isLogged" (click)='confirmOrderAlert()' class="button-header-end" slot="end">
       <ion-icon name="return-right"></ion-icon>
     </ion-button>
   </ion-toolbar>
@@ -11,25 +11,37 @@
 
 
 <ion-content class="color-content">
-  <ion-grid style="text-align: center;" class="ion-padding">
-    <ion-img width="80" height="80" src="../../../assets/images/home/wilsterLogo.png"></ion-img>
-    <ion-label style="margin:1em; color: rgb(233, 227, 227);">
-      Wilstermann quiere que te registres
-    </ion-label>
-    <ion-label style="margin:1em; color: rgb(233, 227, 227);">
-      Accede a contenido exclusivo, personalizado para tu perfil, mira las predicciones y stickers oficiales
-    </ion-label>
-  </ion-grid>
+
+  <div *ngIf="!isLogged" else isLog>
+
+    <ion-grid style="text-align: center;" class="ion-padding">
+      <ion-img width="80" height="80" src="../../../assets/images/home/wilsterLogo.png"></ion-img>
+      <ion-label style="margin:1em; color: rgb(233, 227, 227);">
+        Wilstermann quiere que te registres
+      </ion-label>
+      <ion-label style="margin:1em; color: rgb(233, 227, 227);">
+        Accede a contenido exclusivo, personalizado para tu perfil, mira las predicciones y stickers oficiales
+      </ion-label>
+    </ion-grid>
     <ion-card class="card-color" (click)="goToRegisterPage()" color="primary">
-        <ion-card-header>
-          <ion-card-title style="text-align: center;">Registrarse</ion-card-title>
-        </ion-card-header>
-      </ion-card>
-      <ion-card (click)="goToLoginPage()" color="primary">
-        <ion-card-header>
-          <ion-card-title style="text-align: center;">Iniciar Sesion</ion-card-title>
-        </ion-card-header>
-      </ion-card>
+      <ion-card-header>
+        <ion-card-title style="text-align: center;">Registrarse</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+    <ion-card (click)="goToLoginPage()" color="primary">
+      <ion-card-header>
+        <ion-card-title style="text-align: center;">Iniciar Sesion</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+  </div>
+
+  <ng-template #isLog>
+    Please friend, login.
+  </ng-template>
+  
+
+
 </ion-content>
 
 

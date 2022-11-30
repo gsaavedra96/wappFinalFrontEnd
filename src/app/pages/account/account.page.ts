@@ -18,6 +18,7 @@ export class AccountPage implements OnInit {
 
   ngOnInit() {
     this.initializeVariables()
+    this.checkUserLogged();
     this.filter = 'account';
   }
 
@@ -53,19 +54,6 @@ export class AccountPage implements OnInit {
     }
   }
 
-  initHome(){
-    localStorageProvider.setObject("userInfo", this.prepareUserInfo());
-  }
-
-  prepareUserInfo(){
-    let userInfo = {
-      username : this.user.username,
-/*       role : info.role,
-      token : info.token */
-    }
-    return userInfo;
-  }
-
   async confirmOrderAlert() {
     const alert = await this.alertController.create({
       mode: 'ios',
@@ -89,6 +77,7 @@ export class AccountPage implements OnInit {
   }
 
   logOut() {
+    console.log("LOG OUT")
     localStorageProvider.removeObject("userInfo");
     this.router.navigate(['/'])
   }

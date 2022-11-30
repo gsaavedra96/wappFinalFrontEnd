@@ -15,7 +15,6 @@ export class HomePage implements OnInit {
 
   //Subscriptions
   //private localSubscription: Subscription;
-  //private logOutSubscription: Subscription;
 
   private locals: any = [];
   public spinner: boolean = false; 
@@ -59,42 +58,5 @@ export class HomePage implements OnInit {
         break;
     }
   }
-
-  async confirmOrderAlert() {
-    const alert = await this.alertController.create({
-      mode: 'ios',
-      header: 'Cerrar Sesión',
-      message: "¿Está seguro que quiere cerrar su sesión?",
-      buttons: [
-        {
-          text: "Cancelar",
-          handler: () => {
-            alert.dismiss();
-          }
-        },
-        {
-          text: "Aceptar",
-          handler: () => {
-            this.logOut();
-          }
-        }]
-    });
-    await alert.present();
-  }
-
-  logOut() {
-    
-  }
-
-/*   logOut() {
-    if (this.logOutSubscription)
-      this.logOutSubscription.unsubscribe()
-    this.logOutSubscription = this.httpService.post("/user/sign-out", {username : this.userService.getUsername()}).subscribe((response: any) => {
-      if (response.status == "success") {
-        localStorageProvider.removeObject("userInfo");
-        this.router.navigate(["/start"]);
-      }
-    });
-  } */
 
 }
