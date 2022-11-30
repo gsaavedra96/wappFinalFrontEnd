@@ -34,6 +34,16 @@ ion-grid {
     background-repeat: no-repeat;
 }
 
+.form-item {
+    
+
+}
+.ion-item {
+    --background: red !important;
+    background-color: red !important;
+}
+
+
 .button-header-end{
     margin-right: 1em;
 }
@@ -45,6 +55,13 @@ ion-grid {
 .register-button{
     color: black !important;
     vertical-align: center;
+}
+
+.register-text {
+    margin-left: 10px !important;
+    padding-bottom: 20px !important;
+    font-size: 1.8em;
+    font-weight: 600;
 }
 
 

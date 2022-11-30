@@ -45,13 +45,17 @@ export class AccountPage implements OnInit {
     this.filter = 'account';
     this.isLogged = false;
     this.user = {};
+    this.checkUserLogged();
   }
+
+  
 
   checkUserLogged(){
     let logged = localStorageProvider.getObject('userInfo');
     if (logged) {
       this.isLogged =  true;    
     }
+    this.isLogged =  true;
   }
 
   async confirmOrderAlert() {

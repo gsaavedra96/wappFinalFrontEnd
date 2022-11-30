@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg1205" inkscape:version="0.92.2 2405546, 2018-03-11" sodipodi:docname="Salir_aquared_flat.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 301 299.7"
+	 style="enable-background:new 0 0 301 299.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#160C69;}
+	.st1{opacity:0.13;stroke:#000000;stroke-width:0.75;stroke-miterlimit:11.3386;enable-background:new    ;}
+	.st2{fill:#F4F6F9;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" id="base" inkscape:current-layer="layer1" inkscape:cx="550.69512" inkscape:cy="-263.08906" inkscape:document-units="mm" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="1017" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="0" inkscape:window-y="36" inkscape:zoom="0.35" pagecolor="#ffffff" showborder="false" showgrid="false">
+	</sodipodi:namedview>
+<g id="layer1" transform="translate(181.61249,26.486258)" inkscape:groupmode="layer" inkscape:label="Capa 1">
+	<path id="rect1040" class="st0" d="M-138.1-26.5H75.6c24,0,43.5,19.5,43.5,43.5v212.3c0,24-19.5,43.5-43.5,43.5h-213.7
+		c-24,0-43.5-19.5-43.5-43.5V17C-181.6-7-162.1-26.5-138.1-26.5z"/>
+	<path id="path1131" inkscape:connector-curvature="0" class="st1" d="M-11.6,43.4l-99.4,3.8l-3.8,12.4l-0.7,148.4l67.5,64.7H75.6
+		c24.1,0,43.5-19.4,43.5-43.5v-54L-11.6,43.4z"/>
+	<g id="g1077" transform="matrix(0.18941407,0,0,0.18941407,-177.06811,-22.187389)">
+		<path id="path1073" inkscape:connector-curvature="0" class="st2" d="M849.8,1007.8c-11.1,0-20,9-20,20v140.3h-481V366.5h481
+			v140.3c0,11.1,9,20,20,20c11.1,0,20-9,20-20V346.5c0-11.1-9-20-20-20H328.8c-11.1,0-20,9-20,20v841.7c0,11.1,9,20,20,20h521.1
+			c11.1,0,20-9,20-20v-160.3C869.9,1016.8,860.9,1007.8,849.8,1007.8z"/>
+		<path id="path1075" inkscape:connector-curvature="0" class="st2" d="M1224.8,753.1l-200.4-200.4c-7.8-7.8-20.5-7.8-28.3,0
+			c-7.8,7.8-7.8,20.5,0,28.3l166.2,166.2h-613c-11.1,0-20,9-20,20s9,20,20,20h613L996,953.5c-7.8,7.8-7.8,20.5,0,28.3
+			c3.9,3.9,9,5.9,14.2,5.9s10.3-2,14.2-5.9l200.4-200.4C1232.6,773.6,1232.6,761,1224.8,753.1L1224.8,753.1z"/>
+	</g>
+</g>
+</svg>

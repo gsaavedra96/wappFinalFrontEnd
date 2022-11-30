@@ -1,4 +1,4 @@
-<ion-content no-padding>
+<ion-content no-padding class="color-content">
     <!-- example blog post-->
 <!--     <div id="image-background">
         <ion-buttons slot="start">
@@ -36,33 +36,44 @@
 
     <ion-row class="row-header">
         <ion-col size="6">
-            <ion-icon  name="analytics"></ion-icon>
-            <ion-label class="user-label"> by Wilster Team</ion-label>
+            <ion-icon  size="40" name="analytics" style="color:red;"></ion-icon>
+            <ion-label class="user-label" style="color:gray!important;"> by Wilster Team</ion-label>
         </ion-col>
-        <ion-col size="6"><ion-label size="9" class="date-label"> {{post.creationTimestamp}}</ion-label></ion-col>
+        <ion-col size="6"><ion-label size="9" class="date-label" style="color:darkblue!important;"> {{post.creationTimestamp}}</ion-label></ion-col>
     </ion-row>
     <div class="separator"></div>
     <ion-card no-padding>
         <ion-label style="align-content: left;">
-            {{post.content}}
+            <div class="news-dashboard">
+                <!--<ion-title class="title-paragraph"> Fundación </ion-title>-->
+                <label class="news-content"> {{post.content}} </label>
+            </div>
         </ion-label>
     </ion-card>
     <div *ngIf="islogged" padding>
         <div class="comment-box">
-        <ion-card class="card" *ngFor="let comment of commentsList">
-            <ion-card-content>
+            <div class="row"><p style="text-align: center; font-weight: 600; margin-bottom: 3px; font-size:0.9rem; color:grey;">COMENTARIOS</p></div>
+            <ion-card class="card card-comment" *ngFor="let comment of commentsList">
                 <ion-row style="margin-bottom: 0.3em;">
-                    <ion-col size="4">{{comment.user.username}}</ion-col>
-                    <ion-col size="8" >{{comment.creationTimestamp}}</ion-col>
+                    <ion-col size="4" style="padding:6px; color:darkred;" >{{comment.user.username}}</ion-col>
+                    <ion-col size="8" style="padding:6px; color:lightcyan; text-align:right;">{{comment.creationTimestamp}}</ion-col>
                 </ion-row>
-                <strong>{{comment.content}}</strong>
-            </ion-card-content>
-        </ion-card>
+                <ion-row style="padding:6px;">
+                    <div style="background-color: #1c1c1c; color:white; border-radius: 6px; min-height: 5em; width: 100%; padding: 3px;">
+                        <strong>{{comment.content}}</strong>
+                    </div>
+                </ion-row>
+                   
+            </ion-card>
         </div>
-        <ion-footer padding>
-            <ion-textarea [(ngModel)]="comment" type="text" placeholder="Escribe tu comentario aqui .... "></ion-textarea>
-            <button ion-button small float-right round (click)="addComment()">Agregar</button>
-        </ion-footer>
+        <div class="comments-content">
+            <ion-footer padding>
+                <ion-textarea [(ngModel)]="comment" type="text" placeholder="Escribe tu comentario aqui .... "></ion-textarea>
+                <div class="row" style="text-align: right;">
+                    <button class="button-comments" ion-button small float-right round (click)="addComment()">Agregar</button>
+                </div>
+            </ion-footer>
+        </div>
     </div>
 
     <!-- <img class="image-background" src="assets/images/news/newTest.jpg" /> -->
