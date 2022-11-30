@@ -17,6 +17,7 @@ export class ResultsPage implements OnInit {
   public rows: any;
   public matchList:any;
   public filter: any;
+  public spinner : boolean = true;
   
   public table:any = {};
   public gameweek:any = results;
@@ -46,6 +47,7 @@ export class ResultsPage implements OnInit {
   listMatch(){
     this.matchService.matchList({}).subscribe((response: any) => { 
       this.matchList = response.data;
+      this.spinner = false;
     });
   }
 

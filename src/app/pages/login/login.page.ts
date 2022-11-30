@@ -6,7 +6,7 @@ import { Platform } from '@ionic/angular';
 import { UserService } from 'src/app/services/userService.service';
 import { localStorageProvider } from 'src/app/lib/localStorageProvider';
 import { ToastService } from 'src/app/services/toastService.service';
-
+import { FcmService } from 'src/app/services/fcm.service';
 
 
 @Component({
@@ -33,6 +33,7 @@ export class LoginPage implements OnInit {
     //private loginService: LoginService,
     private router: Router,
     private platform: Platform,
+    private fcmService : FcmService
    // private toastService: ToastService
   ) { }
 
@@ -77,15 +78,19 @@ export class LoginPage implements OnInit {
   }
 
   login() {
-    //this.spinner = true;
+  //this.spinner = true;
   this.userService.loginAuth({email : this.user.email, password : this.user.password})
     .then(response =>{
       let data : any = response.user;
-      this.userService.login(this.user.email,this.user.password,data.accessToken).subscribe((response: any) => { 
-        this.router.navigate(['home'])
-    })
-  }) 
-
+      this.fcmService.Initialize()
+      setTimeout(() => {
+        /** spinner ends after 5 seconds */
+        this.userService.login(this.user.email,this.user.password).subscribe((response: any) => { 
+          localStorageProvider.setObject("userInfo", response.data.user);
+          this.router.navigate(['home'])
+        })
+      }, 3000);
+    }) 
   }
 
   prepareUserInfo(infoUser : any){

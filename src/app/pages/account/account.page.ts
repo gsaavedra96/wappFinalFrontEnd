@@ -14,12 +14,34 @@ export class AccountPage implements OnInit {
 
   public user : any;
   public isLogged: boolean=false;
+  public filter: any;
 
   ngOnInit() {
     this.initializeVariables()
+    this.filter = 'account';
+  }
+
+  ngAfterViewChecked(){
+    this.filter = 'account';
+  }
+
+  segmentChanged(filter:any) {
+    this.filter = filter;
+    switch (this.filter) {
+      case 'feed':
+        this.router.navigate(['feed']);
+        break;
+      case 'home':
+        this.router.navigate(['home']);
+        break;
+      case 'account':
+        this.router.navigate(['account']);
+        break;
+    }
   }
 
   initializeVariables(){
+    this.filter = 'account';
     this.isLogged = false;
     this.user = {};
     this.checkUserLogged();
@@ -34,7 +56,6 @@ export class AccountPage implements OnInit {
     }
     this.isLogged =  true;
   }
-
 
   initHome(){
     localStorageProvider.setObject("userInfo", this.prepareUserInfo());

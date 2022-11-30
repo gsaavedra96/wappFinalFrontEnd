@@ -18,6 +18,7 @@ export class PlayersPage implements OnInit {
   public midFieldersList:any = [];
   public defenseFieldersList:any = [];
   public forwardFieldersList:any = [];
+  public spinner : boolean = true;
 
   ngOnInit() {
     this.getList();
@@ -27,6 +28,7 @@ export class PlayersPage implements OnInit {
     this.playerService.playersList({}).subscribe((response: any) => { 
       this.playerList = response.data;
       this.parsePlayersRole();
+      this.spinner = false;
     });
     console.log("RESPONSE",this.playerList)
 

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 //import { environment } from 'src/environments/environment';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Platform } from '@ionic/angular';
+import { localStorageProvider } from '../lib/localStorageProvider';
 //import { FirebaseX } from "@ionic-native/firebase-x/ngx";
 import { FirebaseMessaging } from '@capacitor-firebase/messaging';
 
@@ -13,7 +14,7 @@ import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signO
 })
 export class UserService {
 
-  private token = '234242323512dsafsad54325gfds';
+  private token = '';
   private deviceType: any = 0;
   //apiURL: string = environment.endPointAPI;
   constructor(private http: HttpClient,
@@ -32,21 +33,19 @@ export class UserService {
     return this.http.post("https://demo.digitallexperience.com/dialex/webresources/Wapp/user/add", { data , "token":"817dd8e5dc7c750d48a5e0a16cd625c8"});
   }
 
-  login(email:any,password:any,token:any){
-
-   console.log("email",email)
-   console.log("password",password)
-    let data = {
-        'token': "817dd8e5dc7c750d48a5e0a16cd625c8",
-        'data': {
-            "user":{
-                'email': email,
-                'password': password,
-            },
-        "type": this.deviceType,
-        "notificationId": token
-        }
-    };
+  login(email:any,password:any,){
+  let token = localStorageProvider.getObject("token")
+  let data = {
+      'token': "817dd8e5dc7c750d48a5e0a16cd625c8",
+      'data': {
+          "user":{
+              'email': email,
+              'password': password,
+          },
+      "type": this.deviceType,
+      "notificationId": token
+      }
+  };
 
     return this.http.post("https://demo.digitallexperience.com/dialex/webresources/Wapp/user/login",  data );
   }

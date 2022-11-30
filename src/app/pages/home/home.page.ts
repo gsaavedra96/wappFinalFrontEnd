@@ -34,30 +34,27 @@ export class HomePage implements OnInit {
     this.initialize();
     //this.getLocals();
   }
-
-  
+  ngAfterViewChecked(){
+    this.filter = 'home';
+  }
 
   initialize() {
     //Servicio para recuperar eventos
     this.spinner = true;
     this.locals = [];
     this.filter = 'home';
-    this.changeView(this.filter);
   }
 
-  changeView(filter:any) {
+  segmentChanged(filter:any) {
     this.filter = filter;
     switch (this.filter) {
       case 'feed':
-        this.spinner = true;
         this.router.navigate(['feed']);
         break;
       case 'home':
-        this.spinner = true;
         this.router.navigate(['home']);
         break;
       case 'account':
-        this.spinner = true;
         this.router.navigate(['account']);
         break;
     }
