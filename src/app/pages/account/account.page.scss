@@ -200,6 +200,28 @@ ion-searchbar{
     --background: blue;
 }
 
+.shirt-wapp {
+    background-image: url('../../../assets/images/home/poleraWAPP.png');
+    //background-color: lightgray;
+    --background: rgba(211, 211, 211, 0.17);
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 85%;
+  background-position: center;
+    height: 450px;
+    border-radius: 15px;
+}
+.username {
+    text-align: center;
+    padding-top: 13em;
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+    padding-bottom: 40px;
+    font-size: 21px;
+    color: lightgray;
+    text-transform: uppercase;
+}
+
 ion-item{
     box-shadow: none !important;
 }
