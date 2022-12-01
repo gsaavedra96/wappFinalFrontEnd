@@ -25,7 +25,6 @@
             <img style="width: 100%;" src="assets/images/wilstermann_logo_color.png" />
           </div>
         </div>
-        <!--<ion-img width="80" height="80" src="../../../assets/images/home/wilsterLogo.png" style="margin-top: 25px;"></ion-img>-->
         <ion-label style="margin:0.85em; color: rgb(233, 227, 227);">
           Wilstermann quiere que te registres
         </ion-label>
@@ -49,12 +48,17 @@
   </div>
 
   <div *ngIf="isLogged">
-    <div style="padding: 25px;">
+    <div center class="paragraph size-image">
+      <ion-img src="assets/images/wilstermann_logo_color.png"></ion-img>
+      <!-- <img style="width: 100%;" src="assets/images/wilstermann_logo_color.png" /> -->
+    </div>
+    <div style="padding-right: 25px; padding-left: 25px;">
       <div class="shirt-wapp" style="background-image: url('assets/images/home/poleraWAPP.png'); background-color: darkgray;">
         <!--<p *ngif="isLogged" class="username">Nombre Usuario</p>-->
-        <p class="username"><b>Nombre Usuario</b></p>
+        <p class="username"><b>{{user.username}}</b></p>
       </div>
-      <p style="text-align: center;"><b>SE UN AVIADOR</b></p>
+      
+      <p style="text-align: center; color : white"><b>Estamos muy felices de tenerte en nuestra gran familia</b></p>
     </div>
   </div>
    

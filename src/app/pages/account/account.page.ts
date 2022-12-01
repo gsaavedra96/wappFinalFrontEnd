@@ -52,9 +52,9 @@ export class AccountPage implements OnInit {
   
 
   checkUserLogged(){
-    let logged = localStorageProvider.getObject('userInfo');
-    console.log("USER INFO",logged)
-    if (logged) {
+    this.user = localStorageProvider.getObject('userInfo');
+    console.log("USER INFO",this.user)
+    if (this.user) {
       this.isLogged =  true;    
     }
     else

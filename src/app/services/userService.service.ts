@@ -42,7 +42,7 @@ export class UserService {
               'email': email,
               'password': password,
           },
-      "type": this.deviceType,
+      "type": 1,
       "notificationId": token
       }
   };
