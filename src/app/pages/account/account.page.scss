@@ -200,12 +200,34 @@ ion-searchbar{
     --background: blue;
 }
 
+.shirt-wapp {
+    background-image: url('../../../assets/images/home/poleraWAPP.png');
+    //background-color: lightgray;
+    --background: rgba(211, 211, 211, 0.17);
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 85%;
+  background-position: center;
+    height: 450px;
+    border-radius: 15px;
+}
+.username {
+    text-align: center;
+    padding-top: 13em;
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+    padding-bottom: 40px;
+    font-size: 21px;
+    color: lightgray;
+    text-transform: uppercase;
+}
+
 ion-item{
     box-shadow: none !important;
 }
 
 .color-content{
-    --background: rgba(17, 16, 16, 0.911);
+    --background: rgba(54, 43, 43, 0.911);
   }
 
 .toolbar-image{
@@ -249,6 +271,6 @@ ion-card{
         margin-top: 10px;
     }
     .row-buttons {
-        margin-top: 6em;
+        margin-top: 2em;
     }
 }

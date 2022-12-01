@@ -24,6 +24,7 @@ export class AccountPage implements OnInit {
 
   ngAfterViewChecked(){
     this.filter = 'account';
+    this.checkUserLogged();
   }
 
   segmentChanged(filter:any) {
@@ -52,10 +53,13 @@ export class AccountPage implements OnInit {
 
   checkUserLogged(){
     let logged = localStorageProvider.getObject('userInfo');
+    console.log("USER INFO",logged)
     if (logged) {
       this.isLogged =  true;    
     }
-    this.isLogged =  false;
+    else
+      this.isLogged =  false;
+    console.log("is logged", this.isLogged)
   }
 
   async confirmOrderAlert() {

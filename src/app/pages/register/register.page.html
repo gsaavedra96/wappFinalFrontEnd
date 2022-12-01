@@ -11,7 +11,7 @@
 
 
 <ion-header>
-  <ion-toolbar class="toolbar-main toolbar-image">
+  <ion-toolbar style="color: rgb(233, 227, 227);" class="toolbar-main toolbar-image">
     <ion-buttons slot="start">
       <ion-back-button mode='md' defaultHref="account"></ion-back-button>
     </ion-buttons>
@@ -22,7 +22,7 @@
 </ion-header> 
 
 
-<ion-content>
+<ion-content class="color-content">
   <!--<ion-grid  lines="none" style="margin-top: 7em;">-->
     <div class="row" style="margin-top: 7em; margin-left: 1em;">
       <div class="col-12 register-title">
@@ -35,27 +35,27 @@
 <div class="row">
   <form (ngSubmit)="submit()" style="margin-top: 1em;">
     <div>
-      <ion-item lines="full">
-        <ion-label position="floating">Nombre Usuario</ion-label>
-        <ion-input [(ngModel)]="user.username" [ngModelOptions]="{standalone: true}" type="text" required></ion-input>
+      <ion-item color="transparent" class="color-content" lines="full">
+        <ion-label style="color: rgb(233, 227, 227);" position="floating">Nombre Usuario</ion-label>
+        <ion-input style="color: rgb(233, 227, 227);" [(ngModel)]="user.username" [ngModelOptions]="{standalone: true}" type="text" required></ion-input>
       </ion-item>
     </div>
     <div>
-      <ion-item lines="full">
-      <ion-label position="floating">Nombre</ion-label>
-      <ion-input [(ngModel)]="user.name" [ngModelOptions]="{standalone: true}" type="text" required></ion-input>
+      <ion-item color="transparent" class="color-content" lines="full">
+      <ion-label style="color: rgb(233, 227, 227);"position="floating">Nombre</ion-label>
+      <ion-input style="color: rgb(233, 227, 227);"[(ngModel)]="user.name" [ngModelOptions]="{standalone: true}" type="text" required></ion-input>
       </ion-item>
     </div>
     <div>
-      <ion-item lines="full">
-      <ion-label position="floating">Email</ion-label>
-      <ion-input [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}" type="text" required></ion-input>
+      <ion-item color="transparent" class="color-content" lines="full">
+      <ion-label style="color: rgb(233, 227, 227);"position="floating">Email</ion-label>
+      <ion-input style="color: rgb(233, 227, 227);"[(ngModel)]="user.email" [ngModelOptions]="{standalone: true}" type="text" required></ion-input>
       </ion-item>
     </div>
     <div class="form-item">
-      <ion-item lines="full">
-      <ion-label position="floating">Contraseña</ion-label>
-      <ion-input  [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}" type="password" required></ion-input>
+      <ion-item color="transparent" class="color-content" lines="full">
+      <ion-label style="color: rgb(233, 227, 227);" position="floating">Contraseña</ion-label>
+      <ion-input style="color: rgb(233, 227, 227);" [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}" type="password" required></ion-input>
       </ion-item>
     </div>
     <ion-row style="margin: 3em;">

@@ -6,6 +6,21 @@ const config: CapacitorConfig = {
     FirebaseMessaging: {
       presentationOptions: ["badge", "sound", "alert"],
     },
+    SplashScreen: {
+      launchShowDuration: 3000,
+      launchAutoHide: true,
+      backgroundColor: "#fff",
+      androidSplashResourceName: "splash",
+      //"androidScaleType": "CENTER_CROP",
+      "showSpinner": false,
+      //"androidSpinnerStyle": "large",
+      //"iosSpinnerStyle": "small",
+      //"spinnerColor": "#999999",
+      splashFullScreen: true,
+      splashImmersive: true,
+      //layoutName: "launch_screen",
+      //"useDialog": true
+    }
   },
   appId: 'io.ionic.wilstermannapp',
   appName: 'WilstermannApp',

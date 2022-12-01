@@ -1,49 +1,63 @@
 <ion-header [translucent]="true">
-  <ion-toolbar class="toolbar">
-    <ion-title class="ion-text-capitalize">
-      WilstermannAPP
-    </ion-title>
+  <ion-toolbar style="color: rgb(233, 227, 227);" class="toolbar">
+    <ion-row>
+      <ion-title>
+        WilstermannAPP
+      </ion-title>
+      
+      <div *ngIf="isLogged" class="logout" (click)='confirmOrderAlert()'>
+        <img style="width: 2em; float: right; margin-right: 1em;" src="assets/images/home/logoutblue.svg" />
+      </div>
+    </ion-row>
 <!--     <ion-button *ngIf="!isLogged" (click)='confirmOrderAlert()' class="button-header-end" slot="end">
       <ion-icon name="return-right"></ion-icon>
     </ion-button> -->
-    <div *ngIf="!isLogged" class="logout" (click)='confirmOrderAlert()' style="text-align: right;">
-      <img style="width: 12%; align: right;" src="assets/images/home/logoutblue.svg" />
-    </div>
   </ion-toolbar>
 </ion-header> 
 
 
 <ion-content class="color-content">
 
-  <div *ngIf="!isLogged" else isLog>
-
-    <ion-grid style="text-align: center;" class="ion-padding">
-      <ion-img width="80" height="80" src="../../../assets/images/home/wilsterLogo.png"></ion-img>
-      <ion-label style="margin:1em; color: rgb(233, 227, 227);">
-        Wilstermann quiere que te registres
-      </ion-label>
-      <ion-label style="margin:1em; color: rgb(233, 227, 227);">
-        Accede a contenido exclusivo, personalizado para tu perfil, mira las predicciones y stickers oficiales
-      </ion-label>
-    </ion-grid>
-    <ion-card class="card-color" (click)="goToRegisterPage()" color="primary">
-      <ion-card-header>
-        <ion-card-title style="text-align: center;">Registrarse</ion-card-title>
-      </ion-card-header>
-    </ion-card>
-    <ion-card (click)="goToLoginPage()" color="primary">
-      <ion-card-header>
-        <ion-card-title style="text-align: center;">Iniciar Sesion</ion-card-title>
-      </ion-card-header>
-    </ion-card>
-
+  <div *ngIf="!isLogged">
+      <ion-grid style="text-align: center;" class="ion-padding">
+        <div class="my_account">
+          <div class="row logo-wapp">
+            <img style="width: 100%;" src="assets/images/wilstermann_logo_color.png" />
+          </div>
+        </div>
+        <!--<ion-img width="80" height="80" src="../../../assets/images/home/wilsterLogo.png" style="margin-top: 25px;"></ion-img>-->
+        <ion-label style="margin:0.85em; color: rgb(233, 227, 227);">
+          Wilstermann quiere que te registres
+        </ion-label>
+        <ion-label style="margin:0.85em; color: rgb(233, 227, 227);">
+          Accede a contenido exclusivo, personalizado para tu perfil, mira las predicciones y stickers oficiales
+        </ion-label>
+      </ion-grid>
+      <div class="row row-buttons">
+        <!--<ion-card class="card-color" (click)="goToRegisterPage()" color="primary">-->
+        <ion-card class="card-dark-color" (click)="goToRegisterPage()">  
+          <ion-card-header>
+            <ion-card-title class="title-button register-button" style="text-align: center;">Registrarse</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+        <ion-card class="card-dark-color" (click)="goToLoginPage()">
+          <ion-card-header>
+            <ion-card-title class="title-button register-button"  style="text-align: center;">Iniciar Sesión</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </div>
   </div>
 
-  <ng-template #isLog>
-    Please friend, login.
-  </ng-template>
-  
-
+  <div *ngIf="isLogged">
+    <div style="padding: 25px;">
+      <div class="shirt-wapp" style="background-image: url('assets/images/home/poleraWAPP.png'); background-color: darkgray;">
+        <!--<p *ngif="isLogged" class="username">Nombre Usuario</p>-->
+        <p class="username"><b>Nombre Usuario</b></p>
+      </div>
+      <p style="text-align: center;"><b>SE UN AVIADOR</b></p>
+    </div>
+  </div>
+   
 
 </ion-content>
 
