@@ -3,13 +3,13 @@ apply plugin: 'com.google.gms.google-services'
 
 android {
 
-  namespace 'io.ionic.wilstermannapp'
+  namespace 'io.ionic.wilsterapp'
   compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "io.ionic.wilstermannapp"
+        applicationId "io.ionic.wilsterapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 3
+        versionCode 4
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {

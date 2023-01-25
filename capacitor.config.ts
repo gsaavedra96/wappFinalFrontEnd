@@ -22,8 +22,8 @@ const config: CapacitorConfig = {
       //"useDialog": true
     }
   },
-  appId: 'io.ionic.wilstermannapp',
-  appName: 'WilstermannApp',
+  appId: 'io.ionic.wilsterapp',
+  appName: 'WilsterApp',
   webDir: 'www',
   bundledWebRuntime: false,
   /*cordova: {

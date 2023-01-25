@@ -2,6 +2,6 @@
 <resources>
     <string name="app_name">WilstermannApp</string>
     <string name="title_activity_main">WilstermannApp</string>
-    <string name="package_name">io.ionic.wilstermannapp</string>
-    <string name="custom_url_scheme">io.ionic.wilstermannapp</string>
+    <string name="package_name">io.ionic.wilsterapp</string>
+    <string name="custom_url_scheme">io.ionic.wilsterapp</string>
 </resources>

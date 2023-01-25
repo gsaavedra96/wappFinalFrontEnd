@@ -7,6 +7,35 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:223418418179:android:70133b4d7f01720a453a36",
+        "android_client_info": {
+          "package_name": "io.ionic.wilsterapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223418418179-v45t937sinsd9hvt054fppihifgdvq5r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWZK9fbU_J_xBf7loJYS2EgfFfjVrPR7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223418418179-v45t937sinsd9hvt054fppihifgdvq5r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:223418418179:android:ff779756c78be668453a36",
         "android_client_info": {
           "package_name": "io.ionic.wilstermannapp"

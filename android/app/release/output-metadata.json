@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "io.ionic.wilstermannapp",
+  "applicationId": "io.ionic.wilsterapp",
   "variantName": "release",
   "elements": [
     {

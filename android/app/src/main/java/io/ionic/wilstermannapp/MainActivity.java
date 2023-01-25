@@ -1,4 +1,4 @@
-package io.ionic.wilstermannapp;
+package io.ionic.wilsterapp;
 
 import com.getcapacitor.BridgeActivity;
 
